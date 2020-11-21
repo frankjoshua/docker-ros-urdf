@@ -1,4 +1,4 @@
-# ROS URDF in Docker [![](https://img.shields.io/docker/pulls/frankjoshua/ros-master)](https://hub.docker.com/r/frankjoshua/ros-master) ![CI](https://github.com/frankjoshua/docker-ros-urdf/workflows/CI/badge.svg)
+# ROS URDF in Docker [![](https://img.shields.io/docker/pulls/frankjoshua/ros-urdf)](https://hub.docker.com/r/frankjoshua/ros-urdf) ![CI](https://github.com/frankjoshua/docker-ros-urdf/workflows/CI/badge.svg)
 
 ## Description
 
