@@ -9,6 +9,7 @@ RUN apt-get update &&\
 
 HEALTHCHECK CMD /ros_entrypoint.sh rostopic list || exit 1
 
-CMD  ["roslaunch", "--wait", "/ros.launch"]
-COPY ./ros.launch /
-COPY ./model.urdf.xacro /
+RUN mkdir -p /app
+COPY ./app /app
+WORKDIR /app
+CMD ["roslaunch", "--wait", "ros.launch"]
