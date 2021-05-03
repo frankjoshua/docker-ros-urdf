@@ -11,7 +11,14 @@ docker run -it \
     --network="host" \
     --env="ROS_IP=$ROS_IP" \
     --env="ROS_MASTER_URI=$ROS_MASTER_URI" \
-    frankjoshua/ros-urdf
+    -v "$PWD/app:/app" \
+    frankjoshua/ros-urdf roslaunch ros.launch
+```
+
+### Sharing Meshes
+
+```
+docker run -it --rm -p 88:80 --name web -v $PWD/app:/usr/share/nginx/html nginx
 ```
 
 ## Building
